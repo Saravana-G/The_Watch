@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard_id"
+            android:checked="true"
+            android:icon="@mipmap/dashboard_icon"
+            android:title="Dashboard"/>
+        <item
+            android:id="@+id/chartview_id"
+            android:icon="@mipmap/chartview_icon"
+            android:title="ChartView"/>
+        <item
+            android:id="@+id/devicesettings_id"
+            android:icon="@mipmap/settings_icon"
+            android:title="Device Settings"/>
+        <item
+            android:id="@+id/measurement_id"
+            android:icon="@mipmap/msettings_icon"
+            android:title="Measurement Settings"/>
+        <item
+            android:id="@+id/help_id"
+            android:icon="@mipmap/help_icon"
+            android:title="Help/Support"/>
+        <item
+            android:id="@+id/logout_id"
+            android:icon="@mipmap/logout_icon"
+            android:title="Logout"/>
+    </group>
+</menu>

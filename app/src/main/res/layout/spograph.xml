@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/spo2_layout"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <!-- The ActionBar -->
+    <include
+        android:id="@+id/appp_bar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/appp_bar"
+
+        android:id="@+id/cal_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/spo2_graph_icon" />
+
+    <ImageView
+        android:src="@drawable/spo2_graph_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cal_img"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView6" />
+    <ImageView
+        android:layout_below="@id/appp_bar"
+        android:id="@+id/calender_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/calender"
+        android:clickable="true"
+        android:onClick="spo2_calender_click"
+        android:layout_alignBottom="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_icon"
+        android:src="@drawable/graph_time_icon"
+        android:layout_alignBottom="@+id/drawgraph"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<!--
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/maingraph"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/calender_img"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toLeftOf="@+id/time_icon"
+        />
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/calender_img"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:id="@+id/drawgraph"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_icon"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/box"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        >
+
+
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/avg"
+            android:gravity="center">
+            <TextView
+                android:text="Total Points:"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/avg_points_text"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_below="@+id/avg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Avg Points: "
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/tot_points_text"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </TableRow>
+    </LinearLayout>
+</RelativeLayout>
+
+</RelativeLayout>

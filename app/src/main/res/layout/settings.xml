@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/userprofilepanel" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Measurement Settings"
+                    android:paddingLeft="85dp"
+                    android:paddingTop="57dp"
+                    android:textSize="47dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+              >
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heartfreq"
+                    />
+                <ImageView
+                    android:id="@+id/heartt"
+                   android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heartratefreqbox"
+                    android:contentDescription="heart" />
+
+                <EditText
+                    android:id="@+id/heartrate"
+                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:ems="10"
+                    android:layout_toRightOf="@id/heartt"
+                    android:textColor="#fffd02"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:padding="18dip"
+
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/heartrate"
+                    android:padding="15dip"
+                    android:text="@string/meas_freq_in_min"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                >
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spo2freq"
+                    />
+                <ImageView
+                    android:id="@+id/spo22"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spo2freqbox"
+                    android:contentDescription="heart" />
+
+                <EditText
+                    android:id="@+id/spo2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:ems="10"
+                    android:layout_toRightOf="@id/spo22"
+                    android:textColor="#fffd02"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:padding="18dip"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/spo2"
+                    android:padding="15dip"
+                    android:text="@string/no_of_meas_per_day"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                >
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tempfreq"
+                    />
+                <ImageView
+                    android:id="@+id/tempp"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tempbox"
+                    android:contentDescription="heart" />
+
+                <EditText
+                    android:id="@+id/temp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:ems="10"
+                    android:layout_toRightOf="@id/tempp"
+                    android:textColor="#fffd02"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:padding="18dip"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/temp"
+                    android:padding="15dip"
+                    android:text="@string/meas_freq_in_min"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                >
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sync"
+                    />
+                <ImageView
+                    android:id="@+id/intervall"
+                    android:layout_width="370dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/syncbox"
+                   />
+
+                <EditText
+                    android:id="@+id/interval"
+                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:ems="10"
+                    android:layout_toRightOf="@id/intervall"
+                    android:textColor="#fffd02"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:padding="18dip"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/interval"
+                    android:padding="15dip"
+                    android:text="@string/syn_freq_in_min"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="200dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/set"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/set"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/change"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+
+                    android:text="@string/change"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+    

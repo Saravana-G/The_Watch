@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">The Watch</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="dataItems">
+        <item>DashBoard</item>
+        <item>ChartView</item>
+        <item>DeviceSetting</item>
+        <item>Measurement Settings</item>
+        <item>Help/Support</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="msg_quit_detail">Resetting your application will erase all your basic user profile and device information</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="msg_quit_title">Reset</string>
+    <string name="hello_world">!</string>
+    <string name="dcon">Device Connection Status</string>
+    <string name="pname">Name</string>
+    <string name="page">Age</string>
+    <string name="psex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="pdiesepro">Disease Profile</string>
+    <string name="pdocname">Doctor Name</string>
+    <string name="signin">Sign In</string>
+    <string name="reset">Reset</string>
+    <string name="tempcheck">Temperature Check</string>
+    <string name="scan_for_device">Scan for Device</string>
+    <string name="heartrate">Heart Rate</string>
+    <string name="spo">Spo2 Rate</string>
+    <string name="acc">Accelerometer</string>
+    <string name="temp">Temperature</string>
+    <string name="datasyn">Sync Interval</string>
+    <string name="set">Set</string>
+    <string name="change">Change</string>
+    <string name="patname">Patient Name</string>
+    <string name="patage">Patient Age</string>
+    <string name="heading">Recommanded Settings For Your Age </string>
+    <string name="push_settings">Push</string>
+    <string name="bcheck">Battery Check</string>
+    <string name="bclose">Close</string>
+    <string name="hgraph">Heart Graph</string>
+    <string name="sgraph">Spo2 Graph</string>
+    <string name="agraph">Acc Graph</string>
+    <string name="tgraph">Temperature Graph</string>
+    <string name="date">Select Date</string>
+    <string name="go">Go</string>
+    <string name="Batterycheck">Battery Level of Device</string>
+    <string name="syn_settings">Sync Settings</string>
+    <string name="syn_freq_in_min">Sync Interval in Minutes</string>
+    <string name="meas_freq_in_min">Measurement Interval in Minutes</string>
+    <string name="no_of_meas_per_day">Number of measurements per day</string>
+
+
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    
+</resources>

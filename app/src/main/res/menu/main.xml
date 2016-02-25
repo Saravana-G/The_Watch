@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Search / will display always -->
+    <item android:id="@+id/action_battery"
+        android:orderInCategory="2"
+        android:icon="@drawable/batteryfull"
+        android:title="Battery"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/action_refresh"
+        android:orderInCategory="1"
+        android:icon="@drawable/refresh"
+        android:title="Refresh"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/action_settings"
+        android:orderInCategory="0"
+        android:title="Pair"
+        app:showAsAction="always"
+        />
+
+
+</menu>

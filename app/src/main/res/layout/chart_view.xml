@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/seekbar_placeholder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <RelativeLayout
+            android:layout_width="980dp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/clocktimeicon"/>
+
+
+            <ImageView
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/hrscale"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="13dp" />
+            <LinearLayout
+                android:id="@+id/seekbar_placeholder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="9dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/exp_list"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekbar_placeholder"
+        android:layout_marginTop="30dp"
+        android:divider="#A4C739"
+        android:dividerHeight="0.1dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+
+        android:transcriptMode="alwaysScroll" />
+    <!--
+    android:groupIndicator="@drawable/scroll_expandabel"
+    -->
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/legend"
+        android:layout_below="@+id/seekbar_placeholder"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/rightx"
+        android:background="@drawable/back_panel"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/drawgraph"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/maingraph2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/righty"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/seekbar_placeholder"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/cal_icon_black" />
+
+    <ImageView
+        android:id="@+id/righty2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/temp_black" />
+
+    <ImageView
+        android:id="@+id/rightx"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/seekbar_placeholder"
+
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/exp_list"
+
+        android:src="@drawable/heart_rate_black" />
+
+    <ImageView
+        android:id="@+id/rightx2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:layout_toRightOf="@+id/exp_list"
+        android:src="@drawable/spo2_black" />
+
+
+    <ImageView
+        android:id="@+id/DrawingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/legend" />
+
+    <LinearLayout
+        android:id="@+id/legend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/exp_list"
+        android:layout_toRightOf="@+id/exp_list"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageOne"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="0.3"
+            android:background="#7420ff04" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Sleeping" />
+
+        <ImageView
+            android:id="@+id/imageTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="0.3"
+            android:background="#c9da1700" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Awake" />
+
+        <ImageView
+            android:id="@+id/imageThree"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="0.3"
+            android:background="#d5521b28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Active" />
+
+        <ImageView
+            android:id="@+id/imageFour"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="0.3"
+            android:background="#ffef00b9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Unknown" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
