@@ -54,6 +54,7 @@ public class simple_load extends Activity implements Animation.AnimationListener
                     db.fetchalldata();
                     startActivity(new Intent(this, main_activity_1.class));
                     finish();
+                    //wow
                 }
                 else{
                     Toast.makeText(simple_load.this, "Please fill the profile details ", Toast.LENGTH_LONG).show();
